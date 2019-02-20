@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 
-.social-networks {
+.main__social-networks {
     display: flex;
 
     width: 3.5%;
@@ -11,7 +11,7 @@
     justify-content: flex-start;
 }
 
-.social-networks__item {
+.main__social-networks-item {
     display: block;
 
     margin: 0 auto;
@@ -22,22 +22,21 @@
 
     font-size: 1.2em;
 }
-.social-networks:first-child {
+.main__social-networks:first-child {
     padding-top: 13.3%;
 }
-.social-networks__item-follow {
-    /* position: absolute;
+.main__social-networks-item-follow {
+/* position: absolute;
     bottom: 40.5%;
     left: calc(50% - 0.5em); */
     width: 25px;
     height: 11px;
-    margin: auto;
-    padding-right: 30.5%;
-    padding-left: 30.5%;
+    margin: 0 auto;
+    padding-top: 30.5%;
+    padding-bottom: 30.5%;
 
     transform: rotate(-90deg);
-    transform-origin: left top;
-    text-align: right;
+    transform-origin: bottom right;
     white-space: nowrap;
 
     font-family: "Montserrat", sans-serif;
@@ -45,30 +44,28 @@
     font-weight: bold;
 }
 
-.wrapper {
+.main {
     display: flex;
 }
 
-.banner {
+.main__banner {
     position: relative;
 
     width: 100%;
 }
-.banner__image {
+.main__banner-image {
     max-width: 100%;
     height: auto;
     max-height: 100%;
 }
 
-.banner__info {
+.main__banner-info {
     position: absolute;
     top: 18.5%;
     left: 47.5%;
-
-    transition: 0.3s;
 }
 
-.banner__info-header {
+.main__banner-info-header {
     letter-spacing: 5px;
 
     font-family: "Montserrat Semi", sans-serif;
@@ -76,17 +73,17 @@
     font-weight: bold;
     font-stretch: ultra-expanded;
 }
-.banner__info-header:nth-child(2n) {
+.main__banner-info-header:nth-child(2n) {
     margin-bottom: 2.75%;
 }
-.banner__info-number {
+.main__banner-info-number {
     padding-right: 2.8%;
 
     font-family: "Montserrat", sans-serif;
     font-size: 1em;
     font-weight: bold;
 }
-.banner__info-category {
+.main__banner-info-category {
     letter-spacing: 1px;
 
     color: #171717;
@@ -96,13 +93,13 @@
     font-weight: 600;
 }
 
-.banner__info-tools {
+.main__banner-info-tools {
     margin-top: 5%;
 }
 
-.banner__info-tools-item {
+.main__banner-info-tools-item {
     margin: 0 1.15% 0 0.5%;
-    padding: 11.5px;
+    padding: 1.2%;
 
     cursor: pointer;
     transition: 0.5s;
@@ -114,14 +111,14 @@
     font-size: 0.75em;
 }
 
-.banner__info-tools-item:hover {
+.main__banner-info-tools-item:hover {
     transition: 0.5s;
 
     color: white;
     background-color: #171717;
 }
 
-.banner__info-description {
+.main__banner-info-description {
     width: 32%;
     margin-top: 5%;
 
@@ -134,7 +131,7 @@
     line-height: 180%;
 }
 
-.banner__info-button-shop {
+.main__banner-info-button-shop {
     margin-top: 4.25%;
     padding: 1.5% 2.75%;
 
