@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 
 .social-networks {
-    position: relative;
-
     display: flex;
 
     width: 3.5%;
@@ -10,21 +8,41 @@
     background-color: #ededed;
 
     flex-flow: column nowrap;
+    justify-content: flex-start;
 }
 
 .social-networks__item {
     display: block;
+
+    margin: 0 auto;
+    padding-top: 30.5%;
+    padding-bottom: 30.5%;
+
+    cursor: pointer;
+
+    font-size: 1.2em;
+}
+.social-networks:first-child {
+    padding-top: 13.3%;
 }
 .social-networks__item-follow {
-    position: absolute;
-    top: 50%;
-    left: 0;
-
-    display: inline-block;
+    /* position: absolute;
+    bottom: 40.5%;
+    left: calc(50% - 0.5em); */
+    width: 25px;
+    height: 11px;
+    margin: auto;
+    padding-right: 30.5%;
+    padding-left: 30.5%;
 
     transform: rotate(-90deg);
-    transform-origin: top left;
+    transform-origin: left top;
+    text-align: right;
     white-space: nowrap;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7em;
+    font-weight: bold;
 }
 
 .wrapper {
@@ -46,6 +64,8 @@
     position: absolute;
     top: 18.5%;
     left: 47.5%;
+
+    transition: 0.3s;
 }
 
 .banner__info-header {
@@ -110,13 +130,15 @@
     font-family: "Montserrat", sans-serif;
     font-size: 0.85em;
     font-weight: 500;
-    font-stretch: condensed ;
+    font-stretch: condensed;
     line-height: 180%;
 }
 
 .banner__info-button-shop {
     margin-top: 4.25%;
     padding: 1.5% 2.75%;
+
+    cursor: pointer;
 
     color: white;
     border: 0;

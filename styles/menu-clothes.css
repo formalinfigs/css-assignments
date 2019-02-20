@@ -1,0 +1,23 @@
+.menu__clothes {
+    display: flex;
+
+    margin: 4% 14%;
+
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.menu__clothes-item {
+    display: inline-block;
+
+    margin: 0 2%;
+
+    cursor: pointer;
+    white-space: nowrap;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.15em;
+    font-weight: bold;
+}
