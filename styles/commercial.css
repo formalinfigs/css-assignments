@@ -1,0 +1,115 @@
+.commercial {
+    display: flex;
+
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.commercial__wrapper {
+    display: flex;
+
+    margin: 10px;
+
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.commercial__item {
+    position: relative;
+
+    width: 100%;
+}
+
+.commercial__item-image {
+    width: 100%;
+}
+
+.commercial__item-info {
+    position: absolute;
+}
+
+.commercial__item-info_bottom .commercial__item-info-clickbait {
+    margin: 0 auto;
+}
+.commercial__item-info_bottom {
+    bottom: 7%;
+
+    width: 100%;
+
+    text-align: center;
+}
+.commercial__item-info_left {
+    top: 25%;
+    left: 8%;
+}
+
+.commercial__item_new::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 45px ;
+    height: 15px;
+    padding: 5px 10px;
+
+    content: "NEW";
+    text-align: center;
+
+    color: white;
+    background-color: #171717;
+
+    font: 400 0.85em "Montserrat", sans-serif;
+}
+.commercial__item_new::after {
+    position: absolute;
+    top: 25px;
+    right: 51px;
+
+    content: "";
+
+    border: 7px solid transparent;
+    border-top: 7px solid #171717;
+    border-left: 7px solid #171717;
+}
+
+.commercial__item-info-category {
+    font: 500 0.85em/180% "Montserrat", sans-serif;
+    font-stretch: condensed;
+}
+.commercial__item-info-clickbait {
+    width: 60%;
+
+    font: bold 1.25em "Montserrat", sans-serif;
+}
+
+.commercial__item-info-clickbait_small {
+    font: bold 0.75em "Montserrat", sans-serif;
+}
+/*coppied from banner.css */
+.commercial__item-info-button-shop {
+    margin-top: 10%;
+    padding: 15px 30px;
+
+    cursor: pointer;
+
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    background-color: #171717;
+
+    font: 500 0.55em "Montserrat", sans-serif;
+}
+
+
+@media only screen and (max-width: 1194px) {
+    .commercial__wrapper:nth-child(3) {
+        width: 70%;
+        margin: 10px 0;
+
+        flex-flow: row nowrap;
+    }
+    .commercial__wrapper:nth-child(3) .commercial__item:first-child {
+        margin-right: 20px;
+    }
+}

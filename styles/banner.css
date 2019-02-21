@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
-
 .main__social-networks {
     display: flex;
 
@@ -147,16 +145,16 @@
 
 @media only screen and (max-width: 1550px) {
     .main__banner-info-header {
-        font-size: 6.8em;
+        font-size: 6.7em;
     }
     .main__banner-info-description {
         width: 40%;
     }
 }
 
-@media only screen and (max-width: 1490px) {
+@media only screen and (max-width: 1495px) {
     .main__banner-info-header {
-        font-size: 6.4em;
+        font-size: 6.25em;
     }
     .main__banner-info-description {
         width: 50%;
@@ -164,12 +162,12 @@
 }
 @media only screen and (max-width: 1400px) {
     .main__banner-info-header {
-        font-size: 6.1em;
+        font-size: 6em;
     }
 }
 @media only screen and (max-width: 1350px) {
     .main__banner-info-header {
-        font-size: 5.8em;
+        font-size: 5.5em;
     }
     .main__banner-info-description {
         width: 60%;
@@ -177,7 +175,7 @@
 }
 @media only screen and (max-width: 1280px) {
     .main__banner-info-header {
-        font-size: 5.5em;
+        font-size: 5.3em;
     }
 }
 @media only screen and (max-width: 1215px) {
@@ -187,12 +185,12 @@
 }
 @media only screen and (max-width: 1190px) {
     .main__banner-info-header {
-        font-size: 4.9em;
+        font-size: 4.7em;
     }
 }
 @media only screen and (max-width: 1090px) {
     .main__banner-info-header {
-        font-size: 4.5em;
+        font-size: 4.3em;
     }
 }
 @media only screen and (max-width: 1010px) {
@@ -275,5 +273,8 @@
         width: 90%;
 
         text-align: justify;
+    }
+    .main__banner-info-button-shop {
+        font-size: 0.75em;
     }
 }

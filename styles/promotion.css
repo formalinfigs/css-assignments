@@ -1,0 +1,63 @@
+.promotion {
+    position: relative;
+
+    display: flex;
+
+    margin: 0 19.5%;
+}
+
+.promotion__item {
+    width: 100%;
+}
+
+.promotion__item-image {
+    width: 100%;
+}
+
+.promotion__item-info {
+    position: absolute;
+    top: 20%;
+
+    text-align: center;
+}
+
+.promotion__item-info_right {
+    right: 20%;
+}
+.promotion__item-info_left {
+    left: 10%;
+}
+
+.promotion__item-info-clickbait {
+    font: bold 1.7em "Montserrat", sans-serif;
+}
+.promotion__item-info-button_black {
+    color: white;
+    background-color: black;
+}
+.promotion__item-info-button_white {
+    color: black;
+    background-color: white;
+}
+.promotion__item-info-button {
+    margin-top: 8%;
+    padding: 4% 10%;
+
+    cursor: pointer;
+
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+
+    font: 600 0.8em "Montserrat", sans-serif;
+}
+
+.promotion__item-info-details {
+    margin-top: 5%;
+
+    letter-spacing: 2px;
+
+    color: #171717;
+
+    font: 600 1em "Montserrat", sans-serif;
+}

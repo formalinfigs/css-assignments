@@ -1,0 +1,52 @@
+.blog {
+    display: flex;
+
+    margin: 3% 19.5% 0 19.5%;
+
+    text-align: center;
+
+    flex-flow: column nowrap;
+}
+
+.blog__header {
+    margin-bottom: 3%;
+
+    font: bold 1.25em "Montserrat", sans-serif;
+}
+.blog__item {
+    position: relative;
+
+    width: 100%;
+}
+.blog__item-image {
+    width: 100%;
+}
+.blog__item-wrapper {
+    display: flex;
+
+    width: 100%;
+
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.blog__item:first-child {
+    margin-right: 2%;
+}
+.blog__item-info {
+    position: absolute;
+    bottom: -5%;
+    left: 6%;
+
+    width: 80%;
+    padding: 2% 4%;
+
+    background-color: rgb(235, 233, 233);
+}
+.blog__item-info-title {
+    font: bold 1em "Montserrat", sans-serif;
+}
+.blog__item-info-date,
+.blog__item-info-author {
+    font: 400 0.75em "Montserrat", sans-serif;
+    font-style: italic;
+}

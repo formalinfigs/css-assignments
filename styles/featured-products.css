@@ -1,0 +1,88 @@
+.featured-products {
+    display: flex;
+
+    margin: 3% 19.5% 3% 19.5%;
+
+    text-align: center;
+
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.featured-products__header {
+    font: bold 1.25em "Montserrat", sans-serif;
+}
+
+.featured-products__item-wrapper {
+    display: flex;
+
+    width: 100%;
+
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.featured-products__item {
+    display: flex;
+
+    width: 100%;
+
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+.featured-products__item:first-child {
+    margin-right: 2.5%;
+}
+.featured-products__item:last-child {
+    margin-right: 2.5%;
+}
+.featured-products__item:not(:last-child) {
+    margin-right: 2.5%;
+}
+.featured-products__item-image {
+    width: 100%;
+}
+.featured-products__item-info {
+    text-align: left;
+}
+.featured-products__item-info-name {
+    font: bold 1em "Montserrat", sans-serif;
+}
+.featured-products__item-info-brand {
+    color: #535353;
+
+    font: 500 0.85em/180% "Montserrat", sans-serif;
+}
+.featured-products__item-info-price {
+    font: bold 1em "Montserrat", sans-serif;
+}
+.featured-products__item-info-price_old {
+    text-decoration: line-through;
+
+    font-weight: 600;
+}
+
+.featured-products__button {
+    margin-top: 2.5%;
+    padding: 1.5% 3%;
+
+    cursor: pointer;
+    transition: 0.25s;
+    white-space: nowrap;
+
+    color: rgb(0, 0, 0);
+    border: 1px solid #d9c8aa;
+    border-radius: 20px;
+    outline: none;
+    background-color: #ffffff;
+
+    font: 600 0.6em "Montserrat", sans-serif;
+
+    align-self: center;
+}
+
+.featured-products__button:hover {
+    transition: 0.25s;
+
+    background-color: #d9c8aa;
+}
