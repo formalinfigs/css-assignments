@@ -70,6 +70,8 @@
 
 .header__tools {
     padding: 45px 45px 35px 0;
+
+    cursor: default;
 }
 
 .header__tools-item {

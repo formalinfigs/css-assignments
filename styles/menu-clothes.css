@@ -1,4 +1,4 @@
-.menu__clothes {
+.menu-clothes {
     display: flex;
 
     margin: 4% 14%;
@@ -7,7 +7,7 @@
     justify-content: center;
 }
 
-.menu__clothes-item {
+.menu-clothes__item {
     display: inline-block;
 
     margin: 0 2%;
@@ -17,7 +17,5 @@
     text-decoration: none;
     letter-spacing: 1px;
 
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.15em;
-    font-weight: bold;
+    font: bold 1.15em "Montserrat", sans-serif;
 }

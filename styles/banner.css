@@ -22,30 +22,36 @@
 
     font-size: 1.2em;
 }
+
 .main__social-networks:first-child {
     padding-top: 13.3%;
 }
-.main__social-networks-item-follow {
-/* position: absolute;
-    bottom: 40.5%;
-    left: calc(50% - 0.5em); */
-    width: 25px;
-    height: 11px;
-    margin: 0 auto;
-    padding-top: 30.5%;
-    padding-bottom: 30.5%;
 
-    transform: rotate(-90deg);
-    transform-origin: bottom right;
+.main__social-networks-item-follow {
+    display: inline-block;
+
+    padding-bottom: calc(50% - 0.7em);
+    padding-left: 30%;
+
+    transform: rotate(90deg) translateY(-100%);
+    transform-origin: top left;
     white-space: nowrap;
 
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.7em;
-    font-weight: bold;
+    font: bold 0.7em "Montserrat", sans-serif;
+}
+
+.main__social-networks-item-follow-letter {
+    display: inline-block;
+
+    min-width: 5px;
+
+    transform: rotate(180deg);
 }
 
 .main {
     display: flex;
+
+    flex-flow: row nowrap;
 }
 
 .main__banner {
@@ -53,10 +59,9 @@
 
     width: 100%;
 }
+
 .main__banner-image {
-    max-width: 100%;
-    height: auto;
-    max-height: 100%;
+    width: 100%;
 }
 
 .main__banner-info {
@@ -68,29 +73,26 @@
 .main__banner-info-header {
     letter-spacing: 5px;
 
-    font-family: "Montserrat Semi", sans-serif;
-    font-size: 6.95em;
-    font-weight: bold;
+    font: bold 6.95em "Montserrat Semi", sans-serif;
     font-stretch: ultra-expanded;
 }
+
 .main__banner-info-header:nth-child(2n) {
     margin-bottom: 2.75%;
 }
+
 .main__banner-info-number {
     padding-right: 2.8%;
 
-    font-family: "Montserrat", sans-serif;
-    font-size: 1em;
-    font-weight: bold;
+    font: bold 1em "Montserrat", sans-serif;
 }
+
 .main__banner-info-category {
     letter-spacing: 1px;
 
     color: #171717;
 
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.85em;
-    font-weight: 600;
+    font: 600 0.85em "Montserrat", sans-serif;
 }
 
 .main__banner-info-tools {
@@ -124,11 +126,8 @@
 
     color: #535353;
 
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.85em;
-    font-weight: 500;
+    font: 500 0.85em/180% "Montserrat", sans-serif;
     font-stretch: condensed;
-    line-height: 180%;
 }
 
 .main__banner-info-button-shop {
@@ -143,7 +142,138 @@
     outline: none;
     background-color: #171717;
 
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.55em;
-    font-weight: 500;
+    font: 500 0.55em "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 1550px) {
+    .main__banner-info-header {
+        font-size: 6.8em;
+    }
+    .main__banner-info-description {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1490px) {
+    .main__banner-info-header {
+        font-size: 6.4em;
+    }
+    .main__banner-info-description {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .main__banner-info-header {
+        font-size: 6.1em;
+    }
+}
+@media only screen and (max-width: 1350px) {
+    .main__banner-info-header {
+        font-size: 5.8em;
+    }
+    .main__banner-info-description {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 1280px) {
+    .main__banner-info-header {
+        font-size: 5.5em;
+    }
+}
+@media only screen and (max-width: 1215px) {
+    .main__banner-info-header {
+        font-size: 5.2em;
+    }
+}
+@media only screen and (max-width: 1190px) {
+    .main__banner-info-header {
+        font-size: 4.9em;
+    }
+}
+@media only screen and (max-width: 1090px) {
+    .main__banner-info-header {
+        font-size: 4.5em;
+    }
+}
+@media only screen and (max-width: 1010px) {
+    .main {
+        flex-flow: column nowrap;
+    }
+    .main__social-networks {
+        position: sticky;
+        z-index: 10;
+        top: -1px;
+
+        width: 100%;
+
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+
+    .main__social-networks-item-follow {
+        display: none;
+    }
+    .main__social-networks:first-child {
+        padding-top: 0;
+    }
+    .main__social-networks-item {
+        margin: 0;
+        padding: 2% 4%;
+    }
+    .main__banner-info {
+        position: static;
+
+        width: 100%;
+
+        text-align: center;
+
+        background-color: #c4c9cd;
+    }
+    .main__banner-info-header:first-child {
+        padding-top: 5%;
+    }
+    .main__banner-info-tools {
+        margin: 5% 0;
+
+        font-size: 1.5em;
+    }
+    .main__banner-info-description {
+        width: 80%;
+        margin: 0 auto;
+
+        text-align: justify;
+
+        font-size: 1em;
+    }
+    .main__banner-info-number {
+        font-size: 2em;
+    }
+    .main__banner-info-category {
+        font-size: 2em;
+    }
+    .main__banner-image {
+        display: none;
+    }
+    .main__banner-info-button-shop {
+        margin-bottom: 5%;
+
+        font-size: 1.25em;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .main__banner-info-header {
+        font-size: 3em;
+    }
+    .main__banner-info-number {
+        font-size: 1em;
+    }
+    .main__banner-info-category {
+        font-size: 1em;
+    }
+    .main__banner-info-description {
+        width: 90%;
+
+        text-align: justify;
+    }
 }
