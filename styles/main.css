@@ -11,3 +11,8 @@
 @import "./product-types.css";
 @import "./featured-products.css";
 @import "./blog.css";
+
+body {
+    max-width: 1900px;
+    margin: 0 auto;
+}
