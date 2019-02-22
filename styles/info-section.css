@@ -67,3 +67,15 @@
 .info-section__item-info-link:hover {
     color: #000000;
 }
+
+@media only screen and (max-width: 800px) {
+    .info-section__item {
+        margin: 0 3%;
+    }
+    .info-section__item:last-child {
+        width: 100%;
+        margin: 0;
+
+        text-align: center;
+    }
+}
