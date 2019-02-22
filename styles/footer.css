@@ -1,0 +1,32 @@
+.footer {
+    margin: 2% 19.5% 3% 19.5%;
+
+    text-align: center;
+}
+
+.footer__copyright {
+    color: #727272;
+
+    font: 500 0.7em "Montserrat", sans-serif;
+}
+
+/*copied from header.css */
+.footer__logo {
+    margin-top: 2.5%;
+
+    text-align: center;
+    letter-spacing: 1px;
+
+    font-family: "Roboto", sans-serif;
+}
+
+.footer__logo-name {
+    font-family: "Montserrat Extra-Bold", sans-serif;
+    font-size: 27px;
+    font-weight: 900;
+}
+
+.footer__logo-tagline {
+    font-size: 13px;
+    font-weight: bold;
+}

@@ -50,3 +50,31 @@
     font: 400 0.75em "Montserrat", sans-serif;
     font-style: italic;
 }
+
+@media only screen and (max-width: 1235px) {
+    .blog__item-wrapper {
+        flex-flow: row wrap;
+    }
+    .blog__item {
+        margin-top: 5%;
+    }
+    .blog__item-info {
+        position: static;
+
+        width: 100%;
+        padding: 0;
+    }
+    .blog__item:first-child {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .blog {
+        margin: 3% 0 0 0;
+    }
+    .blog__header {
+        margin-top: 1.25%;
+        margin-bottom: 0;
+    }
+}

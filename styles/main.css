@@ -11,6 +11,8 @@
 @import "./product-types.css";
 @import "./featured-products.css";
 @import "./blog.css";
+@import "./info-section.css";
+@import "./footer.css";
 
 body {
     max-width: 1900px;

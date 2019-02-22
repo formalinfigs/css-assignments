@@ -61,3 +61,127 @@
 
     font: 600 1em "Montserrat", sans-serif;
 }
+
+@media only screen and (max-width: 1645px) {
+    .promotion__item-info_right {
+        right: 15%;
+    }
+    .promotion__item-info_left {
+        left: 8%;
+    }
+
+    .promotion__item-info-clickbait {
+        font-size: 1.5em;
+    }
+    .promotion__item-info-details {
+        margin-top: 3%;
+
+        font-size: 0.8em;
+    }
+    .promotion__item-info-button {
+        margin-top: 6%;
+    }
+}
+
+@media only screen and (max-width: 1325px) {
+    .promotion__item-info {
+        top: 15%;
+    }
+    .promotion__item-info_left {
+        left: 6%;
+    }
+
+    .promotion__item-info_right {
+        right: 10%;
+    }
+    .promotion__item-info-clickbait {
+        font-size: 1.25em;
+    }
+    .promotion__item-info-details {
+        margin-top: 2.5%;
+
+        font-size: 0.7em;
+    }
+    .promotion__item-info-button {
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 1015px) {
+    .promotion__item-info {
+        top: 10%;
+    }
+    .promotion__item-info_right {
+        right: 8%;
+    }
+    .promotion__item-info_left {
+        left: 5%;
+    }
+
+    .promotion__item-info-clickbait {
+        font-size: 1.15em;
+    }
+    .promotion__item-info-details {
+        margin-top: 2.5%;
+
+        font-size: 0.6em;
+    }
+    .promotion__item-info-button {
+        margin-top: 4%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .promotion {
+        margin: 0 19.5%;
+    }
+
+    .promotion__item {
+        display: flex;
+    }
+    .promotion__item-info_blue {
+        background-color: #00b7d9;
+    }
+    .promotion__item-info_grey {
+        background-color: #d7dbd5;
+    }
+    .promotion__item-info {
+        position: static;
+
+        display: block;
+
+        width: 100%;
+    }
+    .promotion__item-image {
+        display: none;
+    }
+
+    .promotion__item-info {
+        top: 0;
+    }
+    .promotion__item-info_right {
+        right: 0;
+    }
+    .promotion__item-info-clickbait {
+        margin-top: 2%;
+
+        font-size: 1.15em;
+    }
+    .promotion__item-info-details {
+        margin-top: 2%;
+
+        font-size: 0.6em;
+    }
+    .promotion__item-info-button {
+        margin: 2.5% 0;
+        padding: 2% 5%;
+
+        font-size: 0.6em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .promotion {
+        margin: 0;
+    }
+}

@@ -33,9 +33,7 @@
 .featured-products__item:first-child {
     margin-right: 2.5%;
 }
-.featured-products__item:last-child {
-    margin-right: 2.5%;
-}
+
 .featured-products__item:not(:last-child) {
     margin-right: 2.5%;
 }
@@ -85,4 +83,19 @@
     transition: 0.25s;
 
     background-color: #d9c8aa;
+}
+
+@media only screen and (max-width: 1235px) {
+    .featured-products__item:last-child {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .featured-products {
+        margin: 3% 0;
+    }
+    .featured-products__item:nth-child(3) {
+        margin-right: 0;
+    }
 }

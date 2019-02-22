@@ -1,0 +1,69 @@
+.info-section {
+    display: flex;
+
+    width: 100%;
+    padding: 2.5% 0;
+
+    background-color: #f8f8f8;
+
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.info-section__item-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    font: bold 0.85em "Montserrat", sans-serif;
+}
+.info-section__item {
+    margin-right: 5%;
+}
+.info-section__item-menu {
+    display: flex;
+
+    margin-top: 5%;
+
+    flex-flow: column nowrap;
+}
+.info-section__item-menu-item {
+    display: inline-block;
+
+    cursor: pointer;
+    white-space: nowrap;
+
+    font: 500 0.7em "Montserrat", sans-serif;
+}
+.info-section__item-info {
+    font: 500 0.7em "Montserrat", sans-serif;
+}
+.info-section__item-menu-link {
+    display: block;
+
+    padding: 5px 0;
+
+    text-decoration: none;
+
+    color: #727272;
+}
+.info-section__item-menu-link:hover {
+    text-decoration: none;
+
+    color: #000000;
+
+    font-size: 800;
+}
+.info-section__item-info-contact {
+    font-weight: 900;
+}
+
+.info-section__item-info {
+    padding: 5px 0;
+}
+.info-section__item-info-link {
+    text-decoration: none;
+
+    color: #727272;
+}
+.info-section__item-info-link:hover {
+    color: #000000;
+}
