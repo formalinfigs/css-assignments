@@ -14,7 +14,8 @@
 [class^="icon-"],
 [class*=" icon-"] {
     text-transform: none;
-    /* use !important to prevent issues with browser extensions that change fonts */
+
+/* use !important to prevent issues with browser extensions that change fonts */
 
     font-family: "icomoon" !important;
     font-weight: normal;
@@ -26,7 +27,6 @@
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    speak: none;
 }
 
 .icon-shopping-bag:before {
