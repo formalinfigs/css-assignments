@@ -24,9 +24,6 @@
 
 .featured-products__item {
     display: flex;
-
-    width: 100%;
-
     flex-flow: column nowrap;
     justify-content: space-between;
 }
@@ -38,8 +35,9 @@
     margin-right: 2.5%;
 }
 .featured-products__item-image {
-    width: 100%;
+    max-width: 100%;
 }
+
 .featured-products__item-info {
     text-align: left;
 }
@@ -86,9 +84,7 @@
 }
 
 @media only screen and (max-width: 1235px) {
-    .featured-products__item:last-child {
-        display: none;
-    }
+   
 }
 
 @media only screen and (max-width: 800px) {
@@ -97,5 +93,15 @@
     }
     .featured-products__item:nth-child(3) {
         margin-right: 0;
+    }
+    .featured-products__item:not(:last-child) {
+        margin-bottom: 2%;
+    }
+    .featured-products__item-wrapper {
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    .featured-products__item-info {
+        text-align: center;
     }
 }
