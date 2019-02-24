@@ -16,7 +16,7 @@
 
 .promotion__item-info {
     position: absolute;
-    top: 20%;
+    top: 15%;
 
     text-align: center;
 }
@@ -108,33 +108,18 @@
     }
 }
 
-@media only screen and (max-width: 1015px) {
+@media only screen and (max-width: 1050px) {
+    .promotion {
+        margin: 0 10%;
+    }
     .promotion__item-info {
-        top: 8%;
-    }
-    .promotion__item-info_right {
-        right: 8%;
-    }
-    .promotion__item-info_left {
-        left: 5%;
-    }
-
-    .promotion__item-info-clickbait {
-        font-size: 1.15em;
-    }
-    .promotion__item-info-details {
-        margin-top: 2.5%;
-
-        font-size: 0.6em;
-    }
-    .promotion__item-info-button {
-        margin-top: 4%;
+        top: 10%;
     }
 }
 
 @media only screen and (max-width: 900px) {
     .promotion {
-        margin: 0 19.5%;
+        margin: 0 10%;
     }
 
     .promotion__item {
@@ -180,6 +165,7 @@
         font-size: 0.6em;
     }
 }
+
 
 @media only screen and (max-width: 800px) {
     .promotion {

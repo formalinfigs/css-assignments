@@ -24,6 +24,7 @@
 
 .featured-products__item {
     display: flex;
+
     flex-flow: column nowrap;
     justify-content: space-between;
 }
@@ -83,10 +84,11 @@
     background-color: #d9c8aa;
 }
 
-@media only screen and (max-width: 1235px) {
-   
+@media only screen and (max-width: 1050px) {
+    .featured-products {
+        margin: 3% 10% 3% 10%;
+    }
 }
-
 @media only screen and (max-width: 800px) {
     .featured-products {
         margin: 3% 0;

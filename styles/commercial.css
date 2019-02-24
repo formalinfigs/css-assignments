@@ -52,7 +52,7 @@
     top: 0;
     right: 0;
 
-    width: 45px ;
+    width: 45px;
     height: 15px;
     padding: 5px 10px;
 
@@ -107,7 +107,7 @@
 
 @media only screen and (max-width: 1370px) {
     .commercial__item-info_bottom {
-        bottom: 7%;
+        bottom: 5%;
 
         width: 100%;
 
@@ -119,42 +119,57 @@
     }
 }
 @media only screen and (max-width: 1235px) {
-    .commercial__wrapper {
-        flex-flow: row wrap;
-    }
-    .commercial__wrapper:first-child {
-        display: none;
-    }
-    .commercial__item_new::before {
-        top: 0;
-        left: 0;
-    }
-    .commercial__item_new::after {
-        right: 100%;
-        left: 0;
-    }
-    .commercial__item-info {
-        position: static;
-    }
-    .commercial__wrapper:nth-child(2) {
-        margin: 0 2.5% 0 0;
-    }
-    .commercial__item-info-button-shop {
-        margin-top: 3%;
-        margin-bottom: 2%;
-    }
-    .commercial__item-info-clickbait {
+    .commercial__item-info-category {
         font-size: 0.75em;
     }
+    .commercial__item-info-clickbait {
+        font-size: 0.85em;
+    }
+    .commercial__item-info-button-shop {
+        padding: 10px 25px;
+    }
 }
-
+@media only screen and (max-width: 1050px) {
+    .commercial {
+        margin: 3% 10% 1.5% 10%;
+    }
+    .commercial__item-info-button-shop {
+        padding: 5px 10px;
+    }
+}
 @media only screen and (max-width: 800px) {
     .commercial {
         margin: 3% 0 1.5% 0;
     }
+    .commercial__item-info-clickbait {
+        font-size: 0.8em;
+    }
+    .commercial__item-info_left {
+        top: 20%;
+        left: 2%;
+    }
     .commercial__item-info-button-shop {
+        margin-top: 6%;
         padding: 5px 10px;
 
         font-size: 0.75em;
+    }
+    .commercial__item-info-category {
+        font-size: 0.625em;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .commercial {
+        flex-flow: column nowrap;
+    }
+    .commercial__wrapper {
+        align-items: center;
+        flex-flow: row nowrap;
+    }
+    .commercial__item {
+        margin: 1% 2%;
+    }
+    .commercial__wrapper:nth-child(2) {
+        margin: 0;
     }
 }
