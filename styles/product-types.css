@@ -33,23 +33,24 @@
 
 .product-types__item {
     position: relative;
-
-    width: 100%;
 }
 .product-types__item:nth-child(2) {
     margin: 0 2%;
 }
 .product-types__item-image {
-    width: 100%;
+    max-width: 100%;
 }
 .product-types__item-button {
     position: absolute;
     bottom: 5%;
-    left: 30%;
+    left: 15%;
 
-    padding: 5% 9%;
+    width: 70%;
+/* padding: 3% 9%;*/
+    padding: 15px 0;
 
     cursor: pointer;
+    white-space: nowrap;
 
     color: rgb(255, 255, 255);
     border: 0;
@@ -63,5 +64,17 @@
 @media only screen and (max-width: 800px) {
     .product-types {
         margin: 3% 0 0 0;
+    }
+    .product-types__item-wrapper {
+        flex-flow: column nowrap;
+    }
+    .product-types__item:nth-child(2) {
+        margin: 2% 0;
+    }
+    .product-types__item-button {
+        left: 35%;
+
+        width: 30%;
+        padding: 15px 0;
     }
 }
