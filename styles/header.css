@@ -1,0 +1,92 @@
+.header {
+    display: flex;
+
+    border-bottom: 5px solid #f3ebdc;
+
+    font-family: "Roboto", sans-serif;
+
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.header__logo {
+    display: flex;
+
+    text-align: center;
+    letter-spacing: 1px;
+
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.header__logo-name {
+    font: 900 1.75em  "Montserrat Extra-Bold", sans-serif;
+}
+
+.header__logo-tagline {
+    font-size: 0.75em;
+    font-weight: bold;
+}
+
+.header__navigation-pages-menu {
+    display: flex;
+
+    margin: 0;
+
+    list-style-type: none;
+
+    color: black;
+    background-color: white;
+
+    flex-flow: row wrap;
+}
+
+.header__navigation-pages-menu-link {
+    display: block;
+
+    padding: 42px 41px;
+
+    white-space: nowrap;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+    color: black;
+
+    font-size: 0.75em;
+    font-weight: 900;
+}
+.header__navigation-pages-menu-link:hover {
+    color: #c80c4b;
+}
+.header__tools {
+    display: flex;
+
+    margin: auto 0;
+
+    cursor: default;
+
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.header__tools-item {
+    padding: 0 10px;
+
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 970px) {
+    .header {
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    .header__navigation-pages-menu {
+        justify-content: center;
+    }
+    .header__tools {
+        margin: 0 0 3% auto;
+    }
+    .header__navigation-pages-menu-link {
+        padding: 15px 10px;
+    }
+}
