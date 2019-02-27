@@ -77,18 +77,23 @@
 }
 
 .commercial__item-info-category {
+    display: block;
+
     font: 500 0.85em/180% "Montserrat", sans-serif;
     font-stretch: condensed;
 }
 .commercial__item-info-clickbait {
+    display: block;
+
     width: 60%;
 
-    font: bold 1.25em "Montserrat", sans-serif;
+    font: bold 1.25em "Montserrat", sans-serif;;
 }
 
 .commercial__item-info-clickbait_small {
     font: bold 0.75em "Montserrat", sans-serif;
 }
+
 /*coppied from banner.css */
 .commercial__item-info-button-shop {
     margin-top: 10%;
@@ -164,12 +169,18 @@
     }
     .commercial__wrapper {
         align-items: center;
-        flex-flow: row nowrap;
+        justify-content: center;
     }
     .commercial__item {
         margin: 1% 2%;
     }
     .commercial__wrapper:nth-child(2) {
         margin: 0;
+    }
+    .commercial__item-info-clickbait {
+        font-size: 1.5em;
+    }
+    .commercial__item-info-category {
+        font-size: 1em;
     }
 }
