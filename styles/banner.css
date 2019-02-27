@@ -1,10 +1,11 @@
 .main__social-networks {
     display: flex;
 
-    width: 50px;
+    width: 60px;
 
     background-color: #ededed;
 
+    align-items: center;
     flex-flow: column nowrap;
     justify-content: center;
 }
@@ -12,7 +13,7 @@
 .main__social-networks-item {
     display: block;
 
-    padding: 20px 0 20px 15px;
+    margin-bottom: 50px;
 
     cursor: pointer;
 
@@ -22,8 +23,7 @@
 .main__social-networks-item-follow {
     display: inline-block;
 
-    height: 70px;
-    padding: 15px 35% 20px 0;
+    padding: 28px 0 20px 0;
 
     transform: rotate(-90deg) translateY(100%);
     transform-origin: bottom left;
@@ -31,6 +31,8 @@
     white-space: nowrap;
 
     font: bold 0.7em "Montserrat", sans-serif;
+
+    align-self: center;
 }
 
 .main__social-networks-item-follow-letter {
@@ -49,7 +51,7 @@
     display: flex;
 
     width: 100%;
-    padding: 210px 6% 270px 0;
+    padding: 210px 6% 250px 0;
 
     background: url("../images/01.jpg") no-repeat center center;
     background-size: cover;
