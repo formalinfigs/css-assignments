@@ -10,6 +10,8 @@
 }
 
 .featured-products__header {
+    display: block;
+
     font: bold 1.25em "Montserrat", sans-serif;
 }
 

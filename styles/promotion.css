@@ -29,6 +29,8 @@
 }
 
 .promotion__item-info-clickbait {
+    display: block;
+
     font: bold 1.7em "Montserrat", sans-serif;
 }
 .promotion__item-info-button_black {
@@ -53,6 +55,8 @@
 }
 
 .promotion__item-info-details {
+    display: block;
+
     margin-top: 5%;
 
     letter-spacing: 2px;
