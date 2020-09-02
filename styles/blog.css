@@ -19,6 +19,8 @@
 }
 
 .blog__header {
+    display: block;
+
     margin-bottom: 3%;
 
     font: bold 1.25em "Montserrat", sans-serif;
@@ -53,6 +55,8 @@
     background-color: rgb(255, 255, 255);
 }
 .blog__item-info-title {
+    display: block;
+
     font: bold 1em "Montserrat", sans-serif;
 }
 .blog__item-info-date,
